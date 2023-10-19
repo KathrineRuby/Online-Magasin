@@ -1,0 +1,729 @@
+/* Reset */
+* {
+    margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	font-family: 'Montserrat', sans-serif;
+}
+
+/* STYLING AF HEADER */
+
+/* Ændring af baggrundsfarve */
+body { 
+	background-image: url(../img/Untitled-3.png);
+	background-size: 120px;
+}
+
+/* Centrering af indhold i header */
+header {
+	text-align: center;
+	background-color: rgba(180, 215, 251, 0.7);
+	height: 140px;
+}
+
+/* Styling af logo */
+.logo {
+    width: 200px;
+	margin: 25px 0 0 0;
+	position: relative;
+	margin-left: 8%;
+}
+
+/* Styling af søgeikonet */
+.material-symbols-outlined {
+	float: right;
+	margin: 35px 90px 0 0;
+	position: relative;
+	color: rgb(0, 0, 0);
+}
+
+.material-symbols-outlined:hover {
+	transform: scale(1.2);
+}
+
+/* Placering af menupunkter */
+nav {
+    width: 100%;
+	height: 60px;
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	position: relative;
+}
+
+/* Styling af menupunkter */
+.hovedmenu {
+	position: relative;
+	font-size: 16px;
+	color: black;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+/* Tilføjelse af hover-effekt til menupunkter */
+.hovedmenu:before {
+	content: "";
+	position: absolute;
+	background-color: black;
+	height: 1.5px;
+	width: 100%;
+	display: block;
+	margin: 0 auto;
+	transform: scaleX(0);
+	top: 31px;
+	transition: .5s
+}
+
+.hovedmenu:hover::before {
+	transform: scaleX(1)
+}
+
+/* Styling af dropdown */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown .hovedmenu {
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Styling af dropdown-indholdet */
+.dropdown .dropdown-content {
+    display: none;
+    position: absolute;
+	margin-top: 10px;
+    background-color: #b4d7fb;
+    min-width: 150px;
+    z-index: 1;
+}
+
+.dropdown .dropdown-content a {
+    color: black;
+    padding: 16px 16px;
+    text-decoration: none;
+    display: block;
+	font-size: 14px;
+	text-align: left;
+}
+
+/* Hover-effekt */
+.dropdown .dropdown-content a:hover {
+    color: white;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Styling af burgermenu */
+.burger {
+	display: none; 
+	cursor: pointer;
+	margin-left: 20px;
+  }
+  
+  .bar {
+	width: 30px;
+	height: 2px;
+	background-color: #000000;
+	margin: 6px 0;
+  }
+
+  /* For mindre skærme */
+  @media screen and (max-width: 768px) {
+	.burger {
+	  display: block;
+	}
+
+	nav {
+		display: none; 
+	  }
+	
+	.material-symbols-outlined {
+		display: none; 
+	  }
+  }
+
+/* Styling af selve indhold på forsiden */
+.flex-container {
+    display: flex;
+    align-items: center;
+	justify-content: space-evenly;
+	margin: 100px;
+	flex-wrap: wrap;
+}
+
+/* Styling af tekst-delen */
+.text {
+    flex: 1; 
+	text-align: left;
+	margin: 0;
+    padding: 90px;
+	background-color: #ffffff;
+	height: 220px;
+	font-size: 16px;
+	word-spacing: 2px;
+	line-height: 130%;
+}
+
+.velkommen {
+	font-size: 30px;
+	margin-bottom: 15px;
+}
+
+/* Styling af billed-delen*/
+.image {
+    flex: 1; 
+    text-align: center; 
+	padding: 90px;
+	height: 220px;
+	background-color: #ffdff9;
+}
+
+.image img {
+    max-width: 100%; 
+    height: 220px; 
+	width: auto;
+}
+
+/* STYLING AF DIY-SIDEN */
+
+/* Styling af container*/
+.container2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+	background-color: #ffffff;
+	margin: 100px;
+	word-spacing: 2px;
+}
+
+/* Styling af teksten */
+.text2 {
+    flex: 1;
+	font-size: 16px;
+	padding: 90px 90px 0 90px;
+	text-align: left;
+	word-spacing: 2px;
+}
+
+.text2 h1 {
+	font-size: 30px;
+	margin-bottom: 15px;
+}
+
+/* Styling af "sådan gør du" */
+.howto {
+    text-align: left; 
+	background-color: #b4d7fb;
+	width: 75%;
+	height: auto;
+	margin-top: 30px;
+	padding: 70px;
+}
+
+/* plads mellem listerne */
+.liste1, .liste2 {
+    display: inline-block; 
+    vertical-align: top; 
+    margin: 0 40px; 
+}
+
+/* Styling af underoverskrifter */
+.howto h2 {
+    font-size: 25px; 
+    margin-bottom: 15px; 
+}
+
+.howto h3 {
+	font-size: 18px;
+	margin-bottom: 10px;
+	margin-left: -18px;
+	font-weight: 600;
+}
+
+.howto ol li {
+	margin-top: 10px;
+}
+
+.howto ol li h4 {
+	font-weight: 600;
+}
+
+/* Styling af tekst "Her kan du se mit resultat" */
+
+.text3 {
+    flex: 1;
+	font-size: 16px;
+	text-align: left;
+	padding: 0px 90px 0 90px;
+	word-spacing: 2px;
+	width: 85%;
+	height: auto;
+	margin-bottom: 30px;
+}
+
+/* Styling af underoverskrift */
+.text3 h2 {
+	font-size: 25px;
+	margin-top: 30px;
+	margin-bottom: 15px;
+}
+
+/* Styling af stole-billeder*/
+.images2 {
+    display: flex;
+    justify-content: space-between;
+	width: 86.5%;
+}
+
+.image-container2 {
+    width: 25%; 
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.img2 {
+    width: 100%; 
+    height: auto;
+    margin: 0;
+}
+
+/* Styling af stole-tekst */
+.text-container2 {
+	flex: 1;
+    width: 50%; 
+    box-sizing: border-box; 
+	background-color: #ffdff9;
+	padding: 90px;
+	text-align: left;
+}
+
+.text-container2 h3 {
+	font-size: 18px;
+	margin-bottom: 10px;
+	font-weight: 600;
+}
+
+
+/* Styling af spejl og skab billeder */
+.images3 {
+    display: flex;
+    justify-content: space-between;
+	width: 86.5%;
+
+}
+
+.image-container3 {
+    width: 25%; 
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.img3 {
+    width: 100%; 
+    height: auto;
+    margin: 0;
+}
+
+/* Styling af spejl og skab tekst */
+.text-container3 {
+	flex: 1;
+    width: 50%; 
+    box-sizing: border-box; 
+	background-color: #ffdff9;
+	padding: 90px;
+	text-align: left;
+}
+
+.text-container3 h3 {
+	font-size: 18px;
+	margin-bottom: 10px;
+	font-weight: 600;
+	margin-top: 15px;
+}
+
+/* Styling af "mine farver"-delen */
+.farveoverskrift {
+    font-size: 25px;
+    margin-top: 30px;
+	width: 85%;
+	text-align: left;
+	margin-bottom: 30px;
+}
+
+.farvebilleder {
+    display: flex;
+	width: 70%;
+	margin-bottom: 60px;
+	font-size: 18px;
+}
+
+.farvebilleder figure {
+    text-align: center;
+}
+
+.farvebilleder img {
+    width: 70%;
+	margin-top: 10px;
+}
+
+/* Tilføjelse af hover-effekt */
+.farvebilleder img:hover {
+    transform: scale(1.1);
+}
+
+/* STYLING AF BORDDÆKNINGSSIDE */
+
+/* Styling af borddækning-containeren */
+.borddækning-container {
+    display: flex;
+    flex-direction: column;
+	background-color: #ffffff;
+	margin: 100px;
+	word-spacing: 2px;
+}
+
+/* Styling af tekst */
+.borddækning-text {
+    flex: 1;
+	font-size: 16px;
+	padding: 90px 90px 0 90px;
+	text-align: left;
+	word-spacing: 2px;
+}
+
+.borddækning-text h1 {
+	font-size: 30px;
+	margin-bottom: 15px;
+}
+
+.borddækning-text h2 {
+	font-size: 25px;
+	margin-top: 50px;
+	margin-bottom: 15px;
+}
+
+.borddækning-text2 h2 {
+	font-size: 25px;
+	padding-left: 90px;
+	margin-bottom: 15px;
+}
+
+.borddækning-text2 p {
+	padding-left: 90px;
+}
+
+/* Styling af morgenmad-container */
+.morgenmad-container {
+	display: flex;
+	align-items: center;
+}
+
+/* Styling af billeder */
+.morgenbilleder {
+	flex: 1;
+	display: flex;
+	padding: 0px 90px;
+	margin-top: 15px;
+}
+
+.morgenbilleder img {
+	flex: 1;
+    height: auto;
+	width: 30%;
+}
+
+/* Styling af tekst */
+.fund-text {
+    flex: 1;
+	font-size: 16px;
+	margin-left: 90px;
+	margin-top: 30px;
+	text-align: left;
+	word-spacing: 2px;
+}
+
+.fund-text h3 {
+	font-size: 18px;
+	font-weight: 600;
+}
+
+/* Styling af fundbilleder */
+.fundbilleder1 {
+    display: flex;
+    flex: 1;
+    max-width: 100%;
+	padding: 0 90px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.billede-med-tekst {
+    text-align: left;
+	padding: 10px;
+	background-color: #ffdff9;
+	margin-top: 15px;
+	position: relative;
+    display: inline-block;
+	margin-bottom: 90px;
+}
+
+.billede-med-tekst img {
+    max-width: 100%;
+    height: auto;
+}
+
+.billede-med-tekst h4 {
+    margin: 10px 0;
+	text-align: center;
+	font-weight: 600;
+}
+
+/* Tilføjelse af hovereffekt */
+.hover-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(180, 215, 251, 0.8);;
+    color: rgb(0, 0, 0);
+    padding: 55px 15px;
+    opacity: 0;
+    text-align: left; /* Centrer teksten */
+    transition: opacity 0.2s;
+}
+
+.billede-med-tekst:hover .hover-text {
+    opacity: 1;
+}
+
+/* STYLING AF TIPS-SIDEN */
+
+/* Styling af container */
+.tips-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+	background-color: #ffffff;
+	margin: 100px;
+	word-spacing: 2px;
+}
+
+.tips2 {
+    flex: 1;
+	font-size: 16px;
+	padding: 90px 90px 0 90px;
+	text-align: left;
+	word-spacing: 2px;
+}
+
+.tips2 h1 {
+	font-size: 30px;
+	margin-bottom: 15px;
+}
+
+/* Styling af tips til genbrugsjagt */
+.genbrugsjagt {
+    text-align: left; 
+	background-color: #ffdff9;
+	width: 75%;
+	height: auto;
+	margin-top: 30px;
+	padding: 70px;
+}
+
+.genbrugsjagt h2 {
+    font-size: 25px; 
+    margin-bottom: 15px; 
+}
+
+.listetips {
+    display: inline-block; 
+    vertical-align: top; 
+    margin-left: 40px;  
+}
+
+.genbrugsjagt ol h4 {
+	font-weight: 600;
+	margin-top: 15px;
+}
+
+.tips {
+flex: 1;
+	font-size: 16px;
+	padding: 0 90px;
+	text-align: left;
+	word-spacing: 2px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+.tips h2 {
+	font-size: 25px; 
+    margin-bottom: 15px; 
+}
+
+/* Styling af steder i Aarhus-delen */
+.steder {
+    display: flex;
+	width: 70%;
+	font-size: 18px;
+	font-weight: 600;
+}
+
+.steder figure {
+    text-align: center;
+	width: 100%;
+}
+
+
+.steder img {
+    width: 200px;
+	height: auto;
+	margin-top: 15px;
+	padding: 0 30px;
+}
+
+.steder img:hover {
+    transform: scale(1.1);
+}
+
+/* Styling af container */
+.personer-container {
+    display: flex;
+    flex: 1;
+    max-width: 100%;
+	padding: 0 90px;
+	display: flex;
+	justify-content: center;
+	gap: 4%;
+}
+
+.personer {
+    text-align: left;
+	padding: 15px;
+	margin-top: 15px;
+    display: inline-block;
+	margin-bottom: 90px;
+	background-color: #ffdff9;
+}
+
+.personer img {
+    width: 300px;
+    height: auto;
+}
+
+.personer p {
+    padding: 15px;
+}
+
+.personer h4 {
+    margin: 15px;
+	text-align: center;
+	font-weight: 600;
+	font-size: 18px;
+}
+
+/* Styling af udforsk-knap */
+.button {
+	text-align: center;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	position: relative;
+	font-weight: 500;
+}
+
+.button a {
+	background-color: #fff5d0;
+	color: black;
+	text-decoration: none;
+	padding: 10px;
+	text-transform: uppercase;
+}
+
+/* Tilføjelse af hover */
+.button:hover {
+    transform: scale(1.1);
+}
+
+
+/* STYLING AF FOOTER */
+
+.footer {
+    background-color: white;
+    display: grid;
+    width: 100%;
+    bottom: 0;
+
+}
+
+.footer, .social{
+    text-align: center;
+    padding-bottom: 25px;
+    color: #000000;
+}
+
+.social a {
+    font-size: 30px;
+    width: 50px;
+    height: auto;
+    display: inline-block;
+    text-align: center;
+    margin: 0 8px;
+}
+
+.social {
+	padding: 30px;
+}
+
+.social a:hover {
+   transform: scale(1.2);
+}
+
+.footer ul {
+    margin-top: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 0;
+
+}
+
+.footer ul li {
+    display: inline-block;
+    padding: 0 20px;
+    
+}
+
+.footer ul li a {
+    color: #000000;
+	text-decoration: none;
+    opacity: 0.6;
+
+}
+
+.footer ul li a:hover {
+    opacity: 1;
+}
+.footer, .copyright {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 13px;
+    color: #000000;
+
+}
+
+.fab {
+    color: #b4d7fb;
+}

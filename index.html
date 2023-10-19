@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Jeg linker til de forskellige ting i head-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="/img/hjem.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+    <link rel="stylesheet" href="/css/style.css">
+    <title>GenanHjem.dk</title>
+</head>
+
+
+<body>
+<!-- Jeg laver header med logo og menupunkter samt dropdown-->
+    <header>
+        
+        <a href="/index.html"><img class="logo" src="/img/genanhjem.webp" alt="logo"></a>
+        <i class="material-symbols-outlined">search</i>
+        <nav>
+            <div class="dropdown">
+                <a href="/index.html" class="hovedmenu">Forside</a>
+                <div class="dropdown-content">
+                </div>
+            </div>
+    
+            <div class="dropdown">
+                <a href="#" class="hovedmenu">Mine fund</a>
+                <div class="dropdown-content">
+                    <a href="#">Favoritfund</a>
+                    <a href="#">Køkkenfund</a>
+                    <a href="#">Stuefund</a>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <a href="#" class="hovedmenu">Inspiration</a>
+                <div class="dropdown-content">
+                    <a href="#">Galleri</a>
+                    <a href="/html/inspiration.html">Bordækning</a>
+                    <a href="#">Indretning</a>
+                </div>
+            </div>
+            
+            <div class="dropdown">
+                <a href="#" class="hovedmenu">DIY</a>
+                <div class="dropdown-content">
+                    <a href="/html/diy.html">Maleprojekt</a>
+                    <a href="#">Byggeprojekt</a>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <a href="#" class="hovedmenu">Tips & tricks</a>
+                <div class="dropdown-content">
+                    <a href="/html/tips.html">Genbrugstips</a>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <a href="#" class="hovedmenu">Om</a>
+                <div class="dropdown-content">
+                    <a href="#">Mig og genbrug</a>
+                    <a href="#">Kontakt</a>
+                </div>
+            </div>
+        </nav>
+
+        <div class="burger">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+
+    </header>
+
+<!-- Jeg opstiller velkomsttekst og billede ved siden af hinanden i flexbox -->
+<div class="flex-container">
+    <div class="text">
+        <h1 class="velkommen">Velkommen til GenanHjem</h1>
+        <p>Et online magasin til dig der søger inspiration til genbrug i hjemmet. Her finder du blandt andet farverige DIY-projekter, inspirerende indretningsideer med genbrug og tips og tricks til, hvordan man finder de gode fund. GenanHjem er mit bud på, hvordan man kan skabe sin helt egen unikke stil på en kreativ og miljøvenlig måde. Værsgo at se dig omkring, og lad dig inspirere til at skabe dit eget personlige hjem med et bæredygtigt twist. </p>
+    </div>
+    <div class="image"><img src="/img/hjem2.png" alt="Billede til højre"></div>
+</div>
+
+
+<!-- Jeg laver footer -->
+    <footer class="footer">
+        <div class="social">
+            <a href="https://www.instagram.com/kathrineruby/"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-snapchat"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.facebook.com/kathrine.ruby.73/"><i class="fab fa-facebook"></i></a>
+        </div>
+        <ul class="footermenu">
+            <li><a href="/index.html">Hjem</a></li>
+            <li><a href="#">Kontakt</a></li>
+            <li><a href="#">Betingelser</a></li>
+            <li><a href="#">Privat politik</a></li>
+            <li><a href="#">FAQ</a></li>
+        </ul>
+            <p class="copyright">GenanHjem.dk @ 2023</p>
+    </footer>
+
+ 
+
+</body>
+</html>
